@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  color: #f2f2f2;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+nav{
+  background: #a6ce9c;
+  padding: 10px 40px 10px 70px;
+  border: 1px solid rgb(142, 157, 226);
+  border-left: none;
+  border-right: none;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li.logo{
+  flex: 1;
+  font-size: 30px;
+  font-weight: 700;
+}
+nav ul div.items{
+  padding: 0 25px;
+  display: inline-flex;
+}
+nav ul div.items a{
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0 12px;
+}
+nav ul div.items a:hover{
+  color: rgb(46, 105, 105);
+}
+nav ul .search-icon{
+  height: 40px;
+  width: 240px;
+  display: flex;
+  background: #f2f2f2;
+  border-radius: 5px;
+}
+nav ul .search-icon input{
+  height: 100%;
+  width: 200px;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  color: #000;
+  font-size: 16px;
+  border-radius: 5px 0 0 5px;
+}
+nav ul .search-icon .icon{
+  height: 100%;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #cccccc;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+nav ul .search-icon .icon:hover{
+  background: #e6e6e6;
+}
+nav ul .search-icon .icon span{
+  color: #222222;
+  font-size: 18px;
+}
+nav ul li.btn{
+  font-size: 29px;
+  flex: 1;
+  padding: 0 40px;
+  display: none;
+}
+nav ul li.btn span{
+  height: 42px;
+  width: 42px;
+  text-align: center;
+  line-height: 42px;
+  border: 1px solid #151515;
+  border-radius: 5px;
+  cursor: pointer;
+}
+nav ul li.btn span.show:before{
+  content: '\f00d';
+}
+@media screen and (max-width: 1052px) {
+  nav{
+    padding: 10px 40px 10px 0px;
+  }
+  nav ul li.logo{
+    display: none;
+  }
+  nav ul div.items{
+    flex: 4;
+  }
+}
+@media screen and (max-width: 800px){
+  nav ul li.btn{
+    display: block;
+  }
+  nav{
+    z-index: 1;
+    padding: 9px 40px 9px 0;
+  }
+  nav ul div.items{
+    z-index: -1;
+    position: fixed;
+    top: -220px;
+    right: 0;
+    width: 100%;
+    background: #222222;
+    display: inline-block;
+    transition: top .4s;
+  }
+  nav ul div.items.show{
+    top: 60px;
+  }
+  nav ul div.items li{
+    text-align: center;
+    line-height: 30px;
+    margin: 30px 0;
+  }
+  nav ul div.items li a{
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 405px) {
+  nav ul{
+    flex-wrap: nowrap;
+  }
+  nav ul li.search{
+    width: 50vmin;
+  }
+  nav ul li input{
+    width: 40vmin;
+  }
+  nav ul li .search-icon{
+    width: 10vmin;
+  }
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  padding: 0 40px;
+  z-index: -2;
+}
+.content .text{
+  font-size: 40px;
+  font-weight: 800;
+  padding: 5px 0;
+  color: #202020;
+}
+.content .p{
+  font-size: 28px;
+  font-weight: 600;
+  color: #202020;
+}
+
+
+
+
+
+:root {
+  --btnColor: hsla(0, 0%, 100%, 0.2);
+  --btnColorHover: hsla(0, 0%, 100%, 0.5);
+  --btnActionColor: hsla(242, 95%, 62%, 0.7);
+  --btnActionColorHover: hsl(242, 95%, 62%, 1);
+}
+
+.Hero__Container {
+  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+}
+
+.Hero__Nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 1rem;
+}
+
+.Hero__Nav_Main {
+  display: flex;
+  align-items: center;
+}
+
+.Hero__Nav_Main_Icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.Hero__Nav_Main_Text {
+  font-weight: 700;
+  font-size: 20px;
+  padding-left: 0.5rem;
+}
+
+.Hero__Nav_Main_Text:hover {
+  opacity: 0.8;
+}
+
+.Hero__Nav_Links {
+  display: none;
+}
+
+.Hero__Nav_Links a:hover {
+  opacity: 0.8;
+}
+
+.Hero__Nav_Links li a {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 500;
+}
+
+.Hero__Nav_Signin_Button {
+  display: none;
+}
+
+.Hero__Nav_Menu_Icon {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+}
+
+.Hero__Nav_Menu_Container {
+  background-color: var(--btnColor);
+  border-radius: 1rem;
+  padding: 0.1rem 0.75rem;
+}
+
+.btn {
+  background-color: var(--btnColor);
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+}
+
+.btn-lg {
+  padding: 1rem 1.5rem;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: var(--btnColorHover);
+}
+
+.btn-action {
+  background-color: var(--btnActionColor);
+}
+
+.btn-action:hover {
+  background-color: var(--btnActionColorHover);
+}
+
+.Mobile_Menu__Nav_Item {
+  display: block;
+  padding: 1rem;
+  color: white;
+  font-weight: 700;
+}
+
+.Bottom__Content {
+  display: flex;
+}
+
+.Hero__Content_Image {
+  width: 325px;
+  height: 325px;
+}
+
+.Hero_Content__Main {
+  display: flex;
+  padding: 1.5rem;
+}
+
+.Hero_Content__Text_Container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  color: white;
+}
+
+.Hero_Content__Text {
+  font-weight: 700;
+  font-size: 44px;
+  padding-bottom: 2rem;
+}
+
+.Hero_Content__SubText {
+  font-size: 19px;
+  font-weight: 500;
+  padding-bottom: 2.75rem;
+  opacity: 0.8;
+}
+
+.Hero_Content__Action_Button_Container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.Hero_Content__Action_Button_Container a:first-child {
+  margin-bottom: 0.5rem;
+}
+
+.Hero_Content__Image_Container {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .Hero__Nav {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  .Hero__Nav_Main_Text {
+    font-size: 24px;
+  }
+  .Hero__Nav_Links {
+    display: flex;
+  }
+  .Hero__Nav_Signin_Button {
+    display: block;
+  }
+  .Hero__Nav_Menu_Icon {
+    display: none;
+  }
+  .Hero__Nav_Menu_Container {
+    display: none;
+  }
+  .Hero__Content_Mobile_Menu {
+    display: none;
+  }
+  .Hero_Content__Main {
+    padding-left: 8rem;
+  }
+  .Hero_Content__Action_Button_Container {
+    display: block;
+    text-align: start;
+  }
+  .Hero_Content__Image_Container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 1400px) {
+  .Hero__Content_Image {
+    width: 650px;
+    height: 450px;
+  }
+}
+
+.Ad1 {
+   width: 200px;
+   height: 200px;
+   vertical-align:middle;
+   display: table-cell;
+   text-align:center;
+
+
+}
+  
+  /* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 120px;
+  background-color: #ab7582;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white(39, 149, 92);
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+body,html,h1,h2,p, div,a,img,header,footer,span{
+    margin: 0;
+    padding: 0;
+}
+*{box-sizing:border-box}
+html{background:#343434;}
+header{background: #00b4de; color: #fbfbfb; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; text-align: center; padding: 2em 0;}
+
+main{
+  width: 94%;
+margin: 0 auto;
+ overflow: hidden;
+}
+
+.col{
+    width: 33.333%;
+    height:500px;
+    float: left;
+    text-align: center;
+    padding:1rem;
+}
+.col1{ background: #9bd5ff;}
+.col2{ background: #ffd587;}
+.col3{ background: #ff8787;}
+
+footer{
+    clear:both;
+    
+}
+
+@media only screen and (max-width:768px){
+    
+    .col1, .col2{
+        width:50%;
+    }
+    .col3{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .col{
+       float: none;
+        width:100%;
+    }
+}
+
