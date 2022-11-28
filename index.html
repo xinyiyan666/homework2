@@ -8,6 +8,7 @@
      <meta name="viewport" content="width=device-width,initial-scale=1.0">
     </head>
    
+    <body>
        
       <nav>
          <ul>
@@ -19,14 +20,15 @@
                <li><a href="#">Services</a></li>
                <li><a href="#">Contact</a></li>
             </div>
+              
             <li class="search-icon">
                <input type="search" placeholder="Search">
                <label class="icon">
                <span class="fas fa-search"></span>
                </label>
-            </li>
-         </ul>
-      </nav>
+              
+               </ul>
+               </nav>
       
 
       <!-- The sidebar -->
@@ -62,33 +64,38 @@
         </a>
       </div>
 
-      <div class="Hero__Container" x-data="{ mobileMenuOpen: false }">
+      
+      <div class="Hero__Container">
 
         <!-- START TOOLBAR -->
+        
         <div class="Hero__Nav">
           <div class="Hero__Nav_Main">
-            
+          
               
             <a href="#main" class="Hero__Nav_Main_Text">
               Animal Crossing
             </a>
           </div>
+          
          
           
-          <a class="Hero__Nav_Menu_Container" href="#" @click="mobileMenuOpen = !mobileMenuOpen">
+          <a class="Hero__Nav_Menu_Container">
             <svg class="Hero__Nav_Menu_Icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </a>
         </div>
+        
+      
         <!-- END TOOLBAR -->
-    
+      
         <!-- START HERO CONTENT CONTAINER-->
         <div class="Hero__Content_Container">
     
           <!-- START MOBILE NAV-->
-          <div class="Hero__Content_Mobile_Menu" x-show="mobileMenuOpen" @click.away="mobileMenuOpen = false">
+          <div class="Hero__Content_Mobile_Menu" >
           </div>
           <!-- END MOBILE NAV -->
     
@@ -113,18 +120,18 @@
         <!-- END HERO CONTENT CONTAINER -->
     
         <!-- Ad -->
-        <div align="center">
+        <div class="Image">
         <a href="https://www.amazon.com/Nintendo-Switch-OLED-Model-Neon-Joy/dp/B098RL6SBJ/ref=sr_1_4?keywords=nintendo+switch&qid=1669585098&sr=8-4">
-        <img src="https://nintendotimes.com/wp-content/uploads/2017/01/Switch-Neon-Box.jpg"   width="500" height="300">
+        <img src="https://nintendotimes.com/wp-content/uploads/2017/01/Switch-Neon-Box.jpg" alt="Nintendo for sale"  width="500" height="300">
         </a>
         </div>
 
-      <main>
+      
         <header>
             <h1>About the Nintendo game —— Animal Crossing</h1>         
         </header>
            
-           <main>
+           
                <div class="col col1">
                    <h2>BASIC INFORMATION</h2>
                    <p>Animal Crossing has become one of the most played games on Nintendo consoles. The latest installment was launched in March 2020 for Nintendo Switch and Switch lite users. In the same year, as the COVID-19 pandemic started and lockdowns came into effect, plenty of people resorted to video games as a source of fun. Animal Crossing: New Horizons was among the most popular games of 2020, and remains popular today. The game sold over 31 million copies worldwide, as per Video Games Chronicle.
@@ -140,7 +147,8 @@
                     But there are plenty of other things to do along the way. There’s a museum to fill with bugs, fossils, paintings, and more. You can collect shells, fruit, and seashells to sell for a profit. You can spend time socializing and sending letters or gifts to residents and real-life friends.
         
                </div>
-           </main>
+              </div>
+           
     
  
         <footer style = " height: 100px; background-color:#607D8B; width: 100%; text-align: center;">
@@ -152,16 +160,4 @@
         
         
         
-    </body>
-    
-    </html>
-
-
-  
-
-
-</body>
-</html>
-  
-   </body>
-</html>
+   
