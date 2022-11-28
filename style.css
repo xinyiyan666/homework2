@@ -88,7 +88,7 @@ nav ul li.btn span{
 nav ul li.btn span.show:before{
   content: '\f00d';
 }
-@media screen and (max-width: 1052px) {
+@media screen and (min-width: 992px) {
   nav{
     padding: 10px 40px 10px 0px;
   }
@@ -99,7 +99,7 @@ nav ul li.btn span.show:before{
     flex: 4;
   }
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 992px){
   nav ul li.btn{
     display: block;
   }
@@ -129,7 +129,7 @@ nav ul li.btn span.show:before{
     font-size: 19px;
   }
 }
-@media screen and (max-width: 405px) {
+@media screen and (min-width: 576px) {
   nav ul{
     flex-wrap: nowrap;
   }
@@ -319,7 +319,17 @@ nav ul li.btn span.show:before{
   display: none;
 }
 
-@media (min-width: 800px) {
+.Image{
+  width:700px;
+  height:350px;
+  border: 2px dashed rgb(179, 203, 159);
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+@media (min-width: 992px) {
   .Hero__Nav {
     padding-left: 8rem;
     padding-right: 8rem;
@@ -365,15 +375,7 @@ nav ul li.btn span.show:before{
   }
 }
 
-.Ad1 {
-   width: 200px;
-   height: 200px;
-   vertical-align:middle;
-   display: table-cell;
-   text-align:center;
 
-
-}
   
   /* The side navigation menu */
 .sidebar {
@@ -425,7 +427,7 @@ div.content {
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   .sidebar a {
     text-align: center;
     float: none;
@@ -462,7 +464,7 @@ footer{
     
 }
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:992px){
     
     .col1, .col2{
         width:50%;
